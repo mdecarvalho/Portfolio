@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Michael De Carvalho, French Web Developer" />
     <meta name="keywords" content="developer, développeur, PHP, portfolio" />
+    <meta name="viewport" content="initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
     <link href="css/style.css" rel="stylesheet" media="all" type="text/css">
     <title>Michael De Carvalho, French Web Developer</title>

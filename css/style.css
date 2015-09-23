@@ -13,15 +13,14 @@ html, body {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     color:white;
-    background: url('../image/background.jpg') no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     margin:0;
     padding: 0;
-}
+    background: #222;
+    background: url(../image/background.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+     background-size: cover; /* version standardisée */
 
+}
 ul{
     list-style-type : none;
 }
@@ -40,7 +39,9 @@ a{
     margin-left: 50px;
     border: 4px solid white;
     border-radius: 50%;
-    margin-top: 20px
+    margin-top: 20px;
+    background-color: grey;
+    opacity: 0.75;
 }
 
 .logo:hover{
@@ -56,7 +57,6 @@ a{
     float: right;
     margin-right: 50px;
     margin-top: 40px;
-
 }
 
 .nav-bar li{
@@ -65,6 +65,8 @@ a{
         padding: 5px 30px;
         border: 3px solid  white;
         border-radius: 5px;
+        background-color: grey;
+        opacity: 0.75;
 }
 .nav-bar li:hover{
     border: 3px solid black;
@@ -77,117 +79,87 @@ a{
     text-align: center;
     color: black;
     font-size: 20px;
+    margin-top: 200px;
+    background-color:white;
+    opacity: 0.5;
+    padding: 10px 0px;
 }
 
 .trip-button{
-    border: 3px solid white;
+    border: 3px solid lightgrey;
     padding: 10px 50px;;
     border-radius: 5px;
-    margin-top:  300px;
     width: 100px;
     margin-left: auto;
     margin-right: auto;
-    color:white;
+    color: white;
+    margin-top: 120px;
+    background-color: grey;
+    opacity: 0.75;
 }
 
 .trip-button:hover{
-    border: 3px solid grey;
-    color: grey;
+    border: 3px solid black;
+    color: black;
 }
 
 .main-content{
-    margin-top: 280px;
     text-align: center;
     color: black;
 }
 
 .page-content{
-    width:1000px;
+    width: 980px;
     min-height: 600px;
     background: white;
     border-radius: 5px;
     padding: 10px 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 250px;
+
+}
+.background{
+    background-image: url("../image/background.jpg");
+    width: 100%;
+    height: 100%;
 
 }
 
-@media all and (orientation: portrait) and (max-width: 1024px){
-        html, body{
-            background-image: none;
-            background-color: #f0f0f0;
-        }
-        .main-title{
-            width: 100%;
-            background-color: white;
-            padding: 20px 5px;
-            margin-left: auto;
-            margin-right: auto;
-            color: #222;
-            border-top: 3px solid grey;
-            border-bottom: 3px solid grey;
-        }
-        .main-title h2{
-            width:500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .nav-bar{
-            margin-right: 20px;
-        }
+@media all and (max-width: 1025px){
+    .nav-bar{
+        margin-right: 10px;
+    }
+    .nav-bar li{
+        padding: 5px 10px;
+        width: 100px;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 5px;
 
-        .nav-bar li{
-            margin-left: 10px;
-            padding: 5px 10px;
-            border: 3px solid grey;
-            color: grey;
-        }
-        .nav-bar li:hover{
-            border: 3px solid #222;
-            color: #222;
-        }
-        .trip-button{
-            border: 3px solid grey;
-            color: grey;
-        }
-        .trip-button:hover{
-            border: 3px solid #222;
-            color: #222;
-        }
-        .logo{
-            border: 4px solid grey;
-            color: grey;
-        }
-
-        .logo:hover{
-            border: 4px solid #222;
-            color: #222;
-        }
-        .page-content{
-            width:800px;
-            border: 3px solid grey;
-            -moz-box-shadow: 10px 10px 5px 0px #656565;
-            -webkit-box-shadow: 10px 10px 5px 0px #656565;
-            -o-box-shadow: 10px 10px 5px 0px #656565;
-            box-shadow: 10px 10px 5px 0px #656565;
-            filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-        }
-
-}
-
-@media all and (orientation: portrait) and (max-width: 849px){
+    }
     .page-content{
-        width:500px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: auto;
     }
 }
-
-@media all and (min-width: 850px) and (max-width: 1025px){
-    .page-content{
-        width:800px;
+@media all and (max-width: 768px){
+    .nav-bar{
+        width: 100px;
+        margin-top: 10px;
     }
-    .main-content{
-        margin-top: 200px;
+
+    .nav-bar li{
+        width: 100px;
+        float: right;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .main-title{
+        padding: 10px 0px;
+        background-color:white;
+        opacity: 0.5;
+        font-size: 18px;
     }
 }
