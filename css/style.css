@@ -75,7 +75,6 @@ a{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 150px;
     color: black;
     font-size: 20px;
 }
@@ -84,7 +83,7 @@ a{
     border: 3px solid white;
     padding: 10px 50px;;
     border-radius: 5px;
-    margin-top:  280px;
+    margin-top:  300px;
     width: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -97,7 +96,7 @@ a{
 }
 
 .main-content{
-    margin-top:  300px;
+    margin-top: 280px;
     text-align: center;
     color: black;
 }
@@ -124,7 +123,14 @@ a{
             padding: 20px 5px;
             margin-left: auto;
             margin-right: auto;
-            color: black;
+            color: #222;
+            border-top: 3px solid grey;
+            border-bottom: 3px solid grey;
+        }
+        .main-title h2{
+            width:500px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .nav-bar{
             margin-right: 20px;
@@ -159,6 +165,14 @@ a{
         }
         .page-content{
             width:800px;
+            border: 3px solid grey;
+            -moz-box-shadow: 10px 10px 5px 0px #656565;
+            -webkit-box-shadow: 10px 10px 5px 0px #656565;
+            -o-box-shadow: 10px 10px 5px 0px #656565;
+            box-shadow: 10px 10px 5px 0px #656565;
+            filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
         }
 
 }
@@ -172,5 +186,8 @@ a{
 @media all and (min-width: 850px) and (max-width: 1025px){
     .page-content{
         width:800px;
+    }
+    .main-content{
+        margin-top: 200px;
     }
 }
