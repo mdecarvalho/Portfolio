@@ -16,7 +16,7 @@ html, body {
     margin:0;
     padding: 0;
     background: #222;
-    background: url(../image/background.jpg) no-repeat center fixed;
+    background: url(../images/background.jpg) no-repeat center fixed;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
      background-size: cover; /* version standardisée */
 

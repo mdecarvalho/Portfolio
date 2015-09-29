@@ -3,7 +3,7 @@
 
 app
 
-.controller('workController', $scope, function($scope){
+.controller('mainController', function($scope){
     $scope.works = [{
     title: 'Dolead Campaign Manager',
     description:'',
