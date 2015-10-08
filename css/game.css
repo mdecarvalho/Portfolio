@@ -1,4 +1,5 @@
 .display-game{
+    margin-top: 150px;
     max-width: 500px;
     min-height:300px;
 }
@@ -7,7 +8,6 @@
     height: 448px;
     margin-left: auto;
     margin-left: auto;
-    z-index: 0;
     background-attachment: local;
     position: relative;
     overflow: hidden;
@@ -136,7 +136,7 @@ character
 
 ***/
 .character {
-    z-index: 100;
+    z-index: 10;
     top: 370px;
     position: absolute;
 }
@@ -145,7 +145,7 @@ character
 }
 
 .win{
-    z-index: 10;
+    z-index: 20;
     position: absolute;
     display: none;
     top: 50px;
@@ -175,7 +175,7 @@ character
 }
 
 .timer {
-    z-index:100;
+    z-index:1;
     font: 1.5em bold;
     font-family: Arial;
     font-weight: 700;
@@ -188,7 +188,7 @@ character
 }
 
 .gameOver{
-    z-index: 10;
+    z-index: 20;
     position: absolute;
     display: none;
     top: 100px;

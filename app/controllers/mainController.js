@@ -25,4 +25,17 @@ app
     techno:'Php, Drupal 7',
     }];
 })
+
+.controller('toggleController', function($scope){
+  if($(window).width() <=1024){
+    $("#toggle-image").show();
+    $scope.menu = true;
+    $scope.toggleMenu = function(){
+        $scope.menu = $scope.menu === false ? true : false;
+    };
+  }
+  else{
+    $("#toggle-image").hide();
+  }
+})
 ;
