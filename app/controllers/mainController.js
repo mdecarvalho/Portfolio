@@ -28,7 +28,6 @@ app
 
 .controller('toggleController', function($scope){
   $scope.$watch('$viewContentLoaded', function(){
-    console.log(window.innerWidth);
     if(window.innerWidth > 1024){
       $scope.show = true;
       $("#toggle-image").hide();

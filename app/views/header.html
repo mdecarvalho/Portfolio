@@ -1,7 +1,6 @@
 <a href="#/home"><section class="logo"><p>MDC</p></section></a>
 <nav class="nav-bar" ng-controller="toggleController">
-    <div id="toggle-image">
-      <img  src="images/menuToggle.png" ng-click="show=!show">
+    <div id="toggle-image" ng-mouseover="changeToggle()" ng-click="show=!show">
     </div>
     <div ng-hide="!show">
       <ul class="" >
