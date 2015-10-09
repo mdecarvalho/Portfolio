@@ -27,15 +27,31 @@ app
 })
 
 .controller('toggleController', function($scope){
-  if($(window).width() <=1024){
-    $("#toggle-image").show();
-    $scope.menu = true;
-    $scope.toggleMenu = function(){
-        $scope.menu = $scope.menu === false ? true : false;
-    };
-  }
-  else{
-    $("#toggle-image").hide();
-  }
+  $scope.$watch('$viewContentLoaded', function(){
+    console.log(window.innerWidth);
+    if(window.innerWidth > 1024){
+      $scope.show = true;
+      $("#toggle-image").hide();
+    }
+    else{
+      $("#toggle-image").show();
+      $scope.show = false;
+    }
+  });
+
+  $(window).resize(function(){
+    if(window.innerWidth > 1024){
+      $scope.show = true;
+      $("#toggle-image").hide();
+    }
+    else{
+      $("#toggle-image").show();
+      $scope.show = false;
+    }
+
+    $scope.$apply(function(){
+
+    });
+  });
 })
 ;
