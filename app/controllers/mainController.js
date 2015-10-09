@@ -3,7 +3,7 @@
 
 app
 
-.controller('workController', $scope, function($scope){
+.controller('mainController', function($scope){
     $scope.works = [{
     title: 'Dolead Campaign Manager',
     description:'',
@@ -24,5 +24,33 @@ app
     description:'',
     techno:'Php, Drupal 7',
     }];
+})
+
+.controller('toggleController', function($scope){
+  $scope.$watch('$viewContentLoaded', function(){
+    if(window.innerWidth > 1024){
+      $scope.show = true;
+      $("#toggle-image").hide();
+    }
+    else{
+      $("#toggle-image").show();
+      $scope.show = false;
+    }
+  });
+
+  $(window).resize(function(){
+    if(window.innerWidth > 1024){
+      $scope.show = true;
+      $("#toggle-image").hide();
+    }
+    else{
+      $("#toggle-image").show();
+      $scope.show = false;
+    }
+
+    $scope.$apply(function(){
+
+    });
+  });
 })
 ;
