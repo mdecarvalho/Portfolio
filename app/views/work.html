@@ -1,3 +1,11 @@
 <section class="page-content">
     <h1>WORK</h1>
+    <div class="work-div" ng-repeat="work in works" >
+        {{ work.name }}
+                    {{ language     }}
+        <div class="language-div" ng-repeat="language in work.languages">
+        </div>
+        {{ work.description }}
+        <img ng-src="{{ work.image }}";
+    </div>
 </section><!-- end page-content.section-->

@@ -87,7 +87,7 @@ a{
 
 .trip-button{
     border: 3px solid lightgrey;
-    padding: 10px 50px;;
+    padding: 10px 50px;
     border-radius: 5px;
     width: 100px;
     margin-left: auto;
@@ -109,14 +109,38 @@ a{
 }
 
 .page-content{
-    width: 980px;
-    min-height: 500px;
+    width: 700px;
+    padding: 50px 20px;
     background: white;
     border-radius: 5px;
-    padding: 10px 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 250px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.page-content h1{
+    margin-bottom: 50px;
+}
+
+.work-div img {
+    width: 80%;
+}
+
+.contact-form input{
+    border-radius: 5px;
+    border: 1px solid;
+    width: 350px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    white-space: wrap;
+}
+.contact-form textarea{
+  border-radius: 5px;
+  border: 1px solid;
+  min-width: 350px;
+  padding: 10px 10px;
+  resize: none;
 }
 
 @media all and (max-width: 1025px){
@@ -159,11 +183,6 @@ a{
         width: 100px;
         margin-top: 5px;
         text-align: center;
-    }
-    .page-content{
-        width:700px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 @media all and (max-width: 768px){

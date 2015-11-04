@@ -6,26 +6,27 @@ var app = angular.module('mdcApp',['ngRoute'])
 
     $routeProvider.when('/', {
         templateUrl: 'app/views/home.html',
-        controller: 'mainController'
+        controller: 'mainController',
     })
 
     .when('/work', {
         templateUrl: 'app/views/work.html',
-        controller: 'mainController',
+        controller: 'workController',
     })
 
     .when('/aboutme', {
         templateUrl: 'app/views/aboutme.html',
-        controller: 'mainController'
+        controller: 'mainController',
     })
 
     .when('/contactme', {
         templateUrl: 'app/views/contactme.html',
-        controller: 'mainController'
+        controller: 'mainController',
     })
+
     .when('/bonus', {
         templateUrl: 'app/views/bonus.html',
-        controller: 'mainController'
+        controller: 'mainController',
     })
 
     .otherwise({

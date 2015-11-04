@@ -148,6 +148,9 @@ function win(){
 function game(){
     $("#soundtrack")[0].play();
     $(document).keydown(function(event){
+      if(event.keyCode == 38 || event.keyCode == 40){
+        event.preventDefault();
+      }
         var charPos= $('.character').position();
         if (event.keyCode == '39') {
             if(true){
@@ -196,11 +199,3 @@ function game(){
         condition = 1;
     })
 }
-
-var timer = setInterval(function() {
-   $('.timer').text("TIME: " + sec--);
-   if (sec == -1) {
-      $('.timer').fadeOut('fast');
-      clearInterval(timer);
-   }
-}, 1000);

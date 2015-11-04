@@ -1,9 +1,30 @@
+.introduction-game{
+    max-width: 500px;
+    height: 448px;
+    position: relative;
+}
+.start-button{
+    position: absolute;
+    bottom: 5px;
+    width: 150px;
+    margin-left: -75px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 0;
+    border-radius: 10px;
+    background: url(../images/boutonnoir.png) no-repeat 100%;
+    color: white;
+}
+.start-button:hover{
+    background: url(../images/boutonnoirhover.png) no-repeat 100%;
+    cursor: pointer;
+}
+
 .display-game{
-    margin-top: 150px;
     max-width: 500px;
     min-height:300px;
 }
-
 .game-container {
     height: 448px;
     margin-left: auto;
