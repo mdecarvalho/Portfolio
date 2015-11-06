@@ -1,11 +1,12 @@
 <section class="page-content">
     <h1>WORK</h1>
     <div class="work-div" ng-repeat="work in works" >
-        {{ work.name }}
-                    {{ language     }}
-        <div class="language-div" ng-repeat="language in work.languages">
-        </div>
-        {{ work.description }}
-        <img ng-src="{{ work.image }}";
+        <h2 class="work-name">{{ work.name }}</h2>
+        <b><p>Technologies</>: <span class="technology-div" ng-repeat="technology in work.technologies">
+            {{ technology}}{{$last ? '' : ', '}}
+        </span></p></b>
+        <p class="work-description">{{ work.description }}</p>
+        <img class="work-image" ng-src="{{ work.image }}">
     </div>
+    <a href="#/aboutme"><li>About me</li></a>
 </section><!-- end page-content.section-->

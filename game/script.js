@@ -2,7 +2,6 @@ $(document).ready(function(){
     $(".game-container").hide();
     $(".introduction-game").click(function(){
         $(".introduction-game").hide();
-        $(".game-container").removeData();
         $(".game-container").show();
         var timer = setInterval(function() {
            $('.timer').text("TIME: " + sec--);

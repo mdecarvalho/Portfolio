@@ -213,5 +213,6 @@ character
     position: absolute;
     display: none;
     top: 100px;
-    left: 100px;
+    left: 50%;
+    margin-left: -150px;
 }
