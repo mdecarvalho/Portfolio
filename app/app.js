@@ -16,7 +16,7 @@ var app = angular.module('mdcApp',['ngRoute'])
 
     .when('/aboutme', {
         templateUrl: 'app/views/aboutme.html',
-        controller: 'mainController',
+        controller: 'aboutmeController',
     })
 
     .when('/contactme', {

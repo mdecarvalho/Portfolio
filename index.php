@@ -22,5 +22,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="app/app.js"></script>
     <script src="app/controllers/mainController.js"></script>
+    <script src="app/controllers/workController.js"></script>
+    <script src="app/controllers/aboutmeController.js"></script>
 </body>
 </html>
