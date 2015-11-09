@@ -7,8 +7,8 @@ app
         {
         name: "Pizza company web site",
         technologies: ["Php5", "Html4","CSS2", "JavaScript", "Jquery"],
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        image: "",
+        description: "It's my first web project, developed in binomial. The instructions were to realize a simplified management site for a pizzeria. We created a registration page , a page with the listing of produces, a promotion page, a page to personalize pizzas, a page for the product cart and a payment page.",
+        image: "images/pizza.jpg",
         },
         {
         name: "Dolead Campaign Manager",
@@ -19,7 +19,7 @@ app
         {
         name: "Project Chat",
         technologies: ["Php", "Html5","CSS3", "JavaScript", "Jquery", "Ajax"],
-        description: "This project was realized in a group and we organized the work according to the scrum method. We also used Trello to organise the various tasks of the project. Furthermore I was the lead developer because I had more experience on the procedural development Php than my colleagues.",
+        description: "This project was realized in a group and we organized the work according to the scrum method. We also used Trello to organise the various tasks of the project. Furthermore I was the lead developer because I had more experience in Php procedural than my colleagues.",
         image: "images/chat.jpg",
         },{
         name: "Project Super Mario Bros ",
@@ -28,9 +28,9 @@ app
         image: "images/mario.jpg",
         },
         {
-        name: "Development of new modules for Drupal 7",
+        name: "Development of a custom module for Drupal 7",
         technologies: ["Drupal 7", "Php5"],
-        description: "",
+        description: "During my last formation, I created a new content type named map wich is composed by a map and movable flags to place on the map of different european country",
         image: "",
         },
         {

@@ -130,6 +130,7 @@ function death(){
         setTimeout('$(".character").remove()', 2000);
         $(".timer").hide();
         $(".coins").hide();
+        $("character").remove();
 }
 
 function win(){
