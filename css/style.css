@@ -177,8 +177,6 @@ aboutme page
 }
 .movie-title{
     display: table-cell;
-    border-collapse: separate;
-    border-spacing: 5px 0px;
     vertical-align: middle;
     background-color: white;
     padding: 10px 5px;
