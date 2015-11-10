@@ -1,6 +1,6 @@
 <section class="page-content">
     <h1>WORK</h1>
-    <div class="work-div" ng-repeat="work in works" >
+    <div class="div-container work-div" ng-repeat="work in works">
         <h2 class="work-name">{{ work.name }}</h2>
         <b><p>Technologies</>: <span class="technology-div" ng-repeat="technology in work.technologies">
             {{ technology}}{{$last ? '' : ', '}}
