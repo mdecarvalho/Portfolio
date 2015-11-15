@@ -4,13 +4,12 @@
     <div class="div-container">
         <h2>PASSIONS</h2>
         <ul>
-            <li>
+            <li >
                 I play synthesizer since the age of 6 years and  I did 5 years
                 of music theory.
             </li>
             <li>
-                I am passionnate about the history of the twentieth century,
-                 cinema, retro gaming, old muscle cars and airsoft.
+                I am passionnate about cinema, retro gaming, old muscle cars and airsoft.
              </li>
             <li>
                 I like to discover new cultures, traveling or watching
@@ -23,7 +22,7 @@
         <h2>FAVORITE MOVIES</h2>
         <div class="movie-div" ng-repeat="movie in movies">
             <p class="movie-title">{{ movie.title }}</p>
-            <a ng-href="{{ movie.link }}" target="_blank"><img class="movie-image" ng-src="{{ movie.image }}" alt="{{ movie.title }}" /></a>
+            <a ng-href="{{ movie.link }}" target="_blank"><img class="movie-image aboutme-image" ng-src="{{ movie.image }}" alt="{{ movie.title }}" /></a>
         </div><!-- end movie.div -->
     </div><!-- end div.movies.container -->
 
@@ -31,8 +30,8 @@
         <h2>FAVORITE SONGS</h2>
         <div class="song-div" ng-repeat="song in songs">
             <p class="song-title">{{ song.title }}</p>
-            <a ng-href="{{ song.link }}" target="_blank"><img class="song-image" ng-src="{{ song.image }}" alt="{{song.title }}" /></a>
+            <a ng-href="{{ song.link }}" target="_blank"><img class="song-image aboutme-image" ng-src="{{ song.image }}" alt="{{song.title }}" /></a>
         </div><!-- end song.div -->
     </div><!-- end div.songs.container -->
-
+    <a ng-click="scrollTo('top')"><img src="./images/up.png" class="up-button" alt="up button" /></a>
 </section><!-- end page-content.section-->

@@ -11,10 +11,10 @@
     <link href="css/game.css" rel="stylesheet" media="all" type="text/css">
     <title>Michael De Carvalho, French Web Developer</title>
 </head>
-<body ng-app="mdcApp">
+<body ng-app="mdcApp" ng-controller="ScrollController">
     <ng-include src="'app/views/header.html'"></ng-include>
     <br>
-    <section class="main-content">
+    <section class="main-content" >
         <ng-view></ng-view>
     </section><!--end main-content.section -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -24,5 +24,6 @@
     <script src="app/controllers/mainController.js"></script>
     <script src="app/controllers/workController.js"></script>
     <script src="app/controllers/aboutmeController.js"></script>
+    <script src="app/controllers/ScrollController.js"></script>
 </body>
 </html>
