@@ -145,6 +145,10 @@ li{
     border-radius: 5px;
 }
 
+.up-button{
+    width: 60px;
+}
+
 /***
 Work page
 ***/
@@ -218,6 +222,11 @@ aboutme page
     margin-bottom: 20px;
 }
 
+.aboutme-image:hover{
+    background-color: white;
+    opacity: 0.75;
+}
+
 /***
 contact page
 ***/
@@ -244,10 +253,10 @@ contact page
 
 .error-block{
     color: red;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: block;
-    text-align: left;
-    margin-left: 165px;
+    text-align: right;
+    margin-right: 165px;
 }
 
 .input-text{
