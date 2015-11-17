@@ -20,8 +20,8 @@ var app = angular.module('mdcApp',['ngRoute'])
     })
 
     .when('/contactme', {
-        templateUrl: 'app/views/contactme.php',
-        controller: 'mainController',
+        templateUrl: 'app/views/contactme.html',
+        controller: 'contactmeController',
     })
 
     .when('/bonus', {

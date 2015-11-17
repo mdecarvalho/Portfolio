@@ -114,7 +114,6 @@ li{
     background-color: white;
     padding: 10px 10px;
     border-radius: 5px;
-    position: relative;
 }
 
 .trip-button{
@@ -143,10 +142,6 @@ li{
     background-color: rgb(236, 236, 236);
     padding: 20px;
     border-radius: 5px;
-}
-
-.up-button{
-        width: 50px;
 }
 
 /***
@@ -191,6 +186,13 @@ aboutme page
 
 }
 
+.movie-image{
+    width: 150px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .song-div{
     display: inline-block;
 }
@@ -209,25 +211,25 @@ aboutme page
     margin-bottom: 20px;
 }
 
-.movie-image{
-    height: 200px;
-}
-
-.aboutme-image{
+.song-image{
     width: 150px;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.aboutme-image:hover{
-    opacity: 0.75;
 }
 
 /***
 contact page
 ***/
 
-.contact-form .input-text{
+.error-block{
+    color: red;
+}
+
+.sucess-message{
+    color: green;
+}
+
+.contact-form input{
     border-radius: 5px;
     border: 1px solid;
     width: 350px;
@@ -238,18 +240,11 @@ contact page
 .contact-form textarea{
   border-radius: 5px;
   border: 1px solid;
-  width: 350px;
+  min-width: 350px;
   padding: 10px 10px;
   resize: none;
   margin-bottom: 50px;
-  bottom: 0px;
-}
-
-.send-button{
-    display: block;
-    padding: 10px 0px;
-    margin:auto;
-    text-align: center;
+  width:50px;
 }
 
 @media all and (max-width: 1025px){
@@ -313,13 +308,5 @@ contact page
       padding: 5px 20px;
       margin-left: auto;
       margin-right: auto;
-  }
-
-  .contact-form .input-text{
-      width: 200px;
-  }
-
-  .contact-form textarea{
-      width: 200px;
   }
 }

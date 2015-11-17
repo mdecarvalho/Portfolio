@@ -1,11 +1,29 @@
 <section class="page-content">
     <h1>CONTACT ME</h1>
-    <form ng-submit="submit()" class="contact-form">
-            <input type="hidden" name="submit">
-            <input type="text" name="name" placeholder="Name" maxlength="50" class="input-text">
-            <input type="text" name="mail" placeholder="email" maxlength="50" class="input-text">
-            <input type="text" name="subject" placeholder="Subject"maxlength="100" class="input-text">
-            <textarea rows="25" name="message" placeholder="Enter your message" maxlength="5000" class="input-text"></textarea>
+
+    <div id="messages" class="sucesse-message" ng-show="message"> {{ message }}</div>
+
+    <form ng-submit="submitForm()" class="contact-form">
+            <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">
+                 <label>Name</label>
+                 <input type="text" name="name" placeholder="Name" maxlength="50" class="input-text" ng-model="formData.name">
+                 <span class="error-block" ng-hide="!errorName">{{ errorName }}</span>
+            </div>
+            <div id="mail-group" class="form-group" ng-class="{ 'has-error' : errorMail }">
+                <label>Email</label>
+                <input type="text" name="mail" placeholder="email" maxlength="50" class="input-text" ng-model="formData.mail">
+                <span class="error-block" ng-hide="!errorMail">{{ errorMail }}</span>
+            </div>
+            <div id="subject-group" class="form-group" ng-class="{ 'has-error' : errorSubject }">
+                 <label>Subject</label>
+                 <input type="text" name="subject" placeholder="Subject"maxlength="100" class="input-text" ng-model="formData.subject">
+                 <span class="error-block" ng-hide="!errorSubject">{{ errorSubject }}</span>
+            </div>
+            <div id="content-group" class="form-group" ng-class="{ 'has-error' : errorContent }">
+                <label>Message</label>
+                <textarea rows="25" name="content" placeholder="Enter your message" maxlength="5000" class="input-text" ng-model="formData.content"></textarea>
+                <span class="error-block" ng-hide="!errorContent">{{ errorContent }}</span>
+            </div>
             <input type="submit" class="send-button link-button" name="submit-button" value="Send">
     </form>
 </section><!-- end page-content.section-->
