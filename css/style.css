@@ -125,9 +125,10 @@ li{
     background-color: rgba(168, 168, 168, 0.60);
     border: 3px solid white;
     border-radius: 5px;
-    width: 115px;
+    width: 150px;
     padding: 10px 20px;
     color: white;
+    text-align: center;
 }
 
 .link-button:hover{
