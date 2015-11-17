@@ -1,7 +1,7 @@
 <section class="page-content">
     <h1>CONTACT ME</h1>
 
-    <div id="messages" class="sucesse-message" ng-show="message"> {{ message }}</div>
+    <div id="messages" class="result-message" ng-hide="hideMessage"> {{ message }}</div>
 
     <form ng-submit="submitForm()" class="contact-form">
             <div id="name-group" class="form-group" ng-class="{ 'has-error' : errorName }">

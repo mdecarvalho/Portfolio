@@ -32,7 +32,7 @@ $data = array(); 		// array to pass back data
 		else
 		{
 			$data['success'] = true;
-			$data['message'] = 'Thank you for sending e-mail';
+			$data['message'] = 'Thank you, the email was sent.';
     	}
 	}
 	echo json_encode($data);
