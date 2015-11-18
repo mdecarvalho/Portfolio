@@ -4,13 +4,13 @@ $errors = array();  	// array to hold validation errors
 $data = array(); 		// array to pass back data
 // validate the variables ======================================================
 	if (empty($_POST['name']))
-		$errors['name'] = 'Name is required.';
+		$errors['name'] = 'Name is required';
 	if (empty($_POST['mail']))
-		$errors['mail'] = 'E-mail is required.';
+		$errors['mail'] = 'E-mail is required';
     if (empty($_POST['subject']))
-    		$errors['subject'] = 'Subject is required.';
+    		$errors['subject'] = 'Subject is required';
 	if (empty($_POST['content']))
-		$errors['content'] = 'Message is required.';
+		$errors['content'] = 'Message is required';
 // return a response ===========================================================
 	// response if there are errors
 	if ( ! empty($errors)) {
@@ -32,7 +32,7 @@ $data = array(); 		// array to pass back data
 		else
 		{
 			$data['success'] = true;
-			$data['message'] = 'Thank you, the email was sent.';
+			$data['message'] = 'Thank you, the email was sent';
     	}
 	}
 	echo json_encode($data);

@@ -8,13 +8,15 @@
     font-weight: bold;
     src: url('../font/Quicksand-Bold.ttf');
 }
+html, body{
+    margin: 0;
+    padding: 0;
+}
 
 html{
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     color:white;
-    margin:0;
-    padding: 0;
     background: url(../images/background.jpg) no-repeat center fixed;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
      background-size: cover; /* version standardisée */
@@ -315,6 +317,10 @@ contact page
     }
 }
 @media all and (max-width: 768px){
+    html{
+        background: url(../images/background.jpg) no-repeat center top;
+        background-color: rgb(13, 7, 10);
+    }
     .main-title{
         padding: 10px 0px;
         background-color:white;
@@ -330,7 +336,7 @@ contact page
         margin-left: 15px;
     }
     .error-block{
-        margin-left: 15px;
+        margin-right: 16px;
     }
 }
 
