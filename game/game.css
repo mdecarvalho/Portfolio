@@ -3,6 +3,45 @@
     height: 448px;
     position: relative;
 }
+
+
+.div-instructions{
+    margin-top: 50px;
+}
+
+.div-instructions p{
+    margin-top: 75px;
+}
+.div-controllers
+{
+    margin-top:75px;
+}
+
+.div-controllers span{
+    font-size: 14px;
+}
+
+.div-controllers #forward{
+margin-left: 10px;
+}
+
+.div-controllers #jump{
+    margin-right: 18px;
+}
+
+.div-controllers #backward{
+    margin-left: -10px;
+    margin-right: 25px;
+}
+
+
+.keys-image{
+    width: 200px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+
 .start-button{
     position: absolute;
     bottom: 5px;

@@ -243,6 +243,11 @@ contact page
     text-align: left;
 }
 
+.red{
+    display: inline-block;
+    color: red;
+}
+
 #messages{
     position:fixed;
     top:0;
@@ -276,25 +281,30 @@ contact page
 }
 
 @media all and (max-width: 1025px){
-  #toggle-image{
-    background-color: rgba(168, 168, 168, 0.6);
-    width: 100px;
-    height: 100px;
-    border: 4px solid white;
-    border-radius: 50%;
-    margin-top: 20px;
-    background-image: url('../images/menuToggle.png');
-    background-size: 100% 100%;
-  }
-  #toggle-image img{
-    width: 100%;
-    height: 100%;
-  }
+    html{
+        background: url(../images/background.jpg) no-repeat center top;
+        background-color: rgb(13, 7, 10);
+    }
+    #toggle-image{
+        background-color: rgba(168, 168, 168, 0.6);
+        width: 100px;
+        height: 100px;
+        border: 4px solid white;
+        border-radius: 50%;
+        margin-top: 20px;
+        background-image: url('../images/menuToggle.png');
+        background-size: 100% 100%;
+    }
+    #toggle-image img{
+        width: 100%;
+        height: 100%;
+    }
 
-  #toggle-image:hover{
-    border-color: black;
-    background-image: url('../images/menuToggle-black.png');
-  }
+    #toggle-image:hover{
+        border-color: black;
+        background-image: url('../images/menuToggle-black.png');
+    }
+
     .logo{
       margin-left: 20px;
     }
@@ -317,10 +327,6 @@ contact page
     }
 }
 @media all and (max-width: 768px){
-    html{
-        background: url(../images/background.jpg) no-repeat center top;
-        background-color: rgb(13, 7, 10);
-    }
     .main-title{
         padding: 10px 0px;
         background-color:white;

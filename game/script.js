@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".game-container").hide();
-    $(".introduction-game").click(function(){
+    $(".start-button").click(function(){
         $(".introduction-game").hide();
         $(".game-container").show();
         var timer = setInterval(function() {
