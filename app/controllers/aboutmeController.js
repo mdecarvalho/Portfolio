@@ -47,7 +47,7 @@ app
      },
      {
          title: "INTERSTELLAR",
-         image: "images/movies/Interstellar.jpg",
+         image: "images/movies/interstellar.jpg",
          link:"https://www.youtube.com/watch?v=LY19rHKAaAg",
      },
     ];
