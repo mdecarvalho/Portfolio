@@ -2,7 +2,7 @@
 'use strict';
 var app = angular.module('mdcApp',['ngRoute'])
 
-.config(function ($routeProvider) {
+.config(function ($routeProvider, $locationProvider) {
 
     $routeProvider.when('/', {
         templateUrl: 'app/views/home.html',
@@ -32,5 +32,7 @@ var app = angular.module('mdcApp',['ngRoute'])
     .otherwise({
         redirectTo: '/'
     });
+    
+    $locationProvider.html5Mode(true);
 })
 ;
