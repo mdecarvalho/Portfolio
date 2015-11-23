@@ -35,7 +35,7 @@ app
         },
         {
         name: "My portfolio",
-        technologies: ["Html", "AngularJs", "JavaScript","Php5"],
+        technologies: ["Html5", "AngularJs", "JavaScript","Php5"],
         description: "I decided to develop my portfolio with AngularJs to improve my AngularJs skills and because I wanted to realize a One Page website.",
         },
     ];
