@@ -12,7 +12,7 @@
     <link href="game/game.css" rel="stylesheet" media="all" type="text/css">
     <title>Michael De Carvalho, French Web Developer</title>
 </head>
-<body ng-app="mdcApp" ng-controller="ScrollController">
+<body id="top" ng-app="mdcApp" ng-controller="ScrollController">
     <ng-include src="'app/views/header.html'"></ng-include>
     <br>
     <section class="main-content" >
