@@ -74,21 +74,6 @@ li{
     color: black;
 }
 
-.main-title{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    margin-top: 200px;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px 0px;
-}
-
-.main-content{
-    color: black;
-}
-
 .page-content{
     width: 700px;
     padding: 50px 20px;
@@ -114,12 +99,6 @@ li{
     background-color: white;
     padding: 10px 10px;
     border-radius: 5px;
-}
-
-.trip-button{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 120px;
 }
 
 .link-button{
@@ -148,6 +127,39 @@ li{
 
 .up-button{
     width: 60px;
+}
+
+/***
+Home page
+***/
+
+.main-title{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0px;
+}
+
+.main-content{
+    color: black;
+}
+
+.trip-button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+#linkedin{
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
 }
 
 /***
@@ -354,5 +366,13 @@ contact page
   }
   .input-text{
       width: 200px;
+  }
+  #linkedin{
+      position: relative;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      right: auto;
+      bottom: auto;
   }
 }
