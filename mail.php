@@ -24,6 +24,7 @@ $data = array(); 		// array to pass back data
 		$mail->FromName = $_POST['name'];
 		$mail->Subject = $_POST['subject'];
 		$mail->Body = $_POST['content'];
+		$mail->CharSet = 'UTF-8';
 		$mail->AddAddress("contact@michael-decarvalho.com");
 		if(!$mail->send())
 		{
